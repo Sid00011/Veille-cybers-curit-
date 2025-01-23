@@ -29,7 +29,8 @@ function App() {
       <Route path='/signin' element= {!user ? <Signin /> : <Navigate to = '/'/>} />
       <Route path='/signup' element= {!user ? <Signup /> : <Navigate to = '/'/>} />
       <Route path='/dashboard' element= {user ? <Dashboard /> : <Navigate to = '/signin'/>} />
-      <Route path='/categorie/:category' element= {<CategoryChoice/>} />
+      {/* <Route path='/vulnerability/:Vul' element= {<CategoryChoice/>} /> */}
+      <Route path="/vulnerability/:Vul" element={<CategoryChoice />} />
 
      </Routes>
       </div>

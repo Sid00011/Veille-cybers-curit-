@@ -64,3 +64,13 @@ def signin(request):
             return Response({'error': 'Invalid credentials'}, status=status.HTTP_401_UNAUTHORIZED)
         
 
+
+@api_view(['GET'])
+def get_vulnerability_by_cve(request, code_cve):
+    try:
+        # Fetch the vulnerability by `code_cve`
+        vulnerability = Vulnerability.objects.get(code_cve=code_cve)
+        serializer = VulnerabilitySerializer(vulnerability)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+    except Vulnerability.DoesNotExist:
+        return Response({'error': 'Vulnerability not found'}, status=status.HTTP_404_NOT_FOUND)

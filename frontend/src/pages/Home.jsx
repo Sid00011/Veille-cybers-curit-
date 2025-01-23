@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { useContextauth } from '../hooks/useContextauth'
 import { useEffect } from 'react'
 import CategorieItem from '../components/CategorieItem'
@@ -57,9 +56,9 @@ function Home() {
       // console.log('hhhhhh')
       try {
         const response = await fetch('http://localhost:8000/api/vulnerabilities/'); 
-        console.log('hhhhhh')
         const data = await response.json();
         setVulnerability(data); // Save the entire data array
+        console.log(data)
       } catch (error) {
         console.error('Error fetching vulnerabilities:', error);
       }
@@ -68,7 +67,7 @@ function Home() {
     fetchVulnerabilities();
   }, []);
 //   useEffect(() => {
-//     console.log('this is my payload', user)
+//     console.log('this is my payload', use
 // }, [user])
 return (
   <div className='flex flex-col align-center mx-5 justify-center my-14 w-full h-full relative z-1'>
@@ -82,8 +81,8 @@ return (
       {Vulnerability.map((Vul) => {
         return (
           <CategorieItem 
-            key={Vul.name}
-            categorie={Vul}
+            key={Vul.code_cve}
+            Vul={Vul}
           />
         )
       })}
