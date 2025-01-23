@@ -1,64 +1,23 @@
-import React from 'react'
-import { useContextauth } from '../hooks/useContextauth'
-import { useEffect } from 'react'
-import CategorieItem from '../components/CategorieItem'
-import { useState } from 'react'
+import React, { useState, useEffect } from 'react';
+import { useContextauth } from '../hooks/useContextauth';
+import CategorieItem from '../components/CategorieItem';
+import SearchVulnerabilities from '../components/SearchVulnerabilities';
 
 function Home() {
-  const [Vulnerability, setVulnerability] = useState([]); 
-  // const Categories = [
-  //   {
-  //     href: '/vulnerability/cve-2021-26855', 
-  //     name: 'CVE-2021-26855: Microsoft Exchange Server Remote Code Execution', 
-  //     image: '/v1.png'
-  //   },
-  //   {
-  //     href: '/vulnerability/cve-2017-0144', 
-  //     name: 'CVE-2017-0144: EternalBlue Windows SMB Remote Code Execution', 
-  //     image: '/v2.jpg'
-  //   },
-  //   {
-  //     href: '/vulnerability/cve-2020-0601', 
-  //     name: 'CVE-2020-0601: Windows CryptoAPI Spoofing Vulnerability', 
-  //     image: '/v3.jpg'
-  //   },
-  //   {
-  //     href: '/vulnerability/cve-2021-22991', 
-  //     name: 'CVE-2021-22991: F5 BIG-IP Remote Code Execution', 
-  //     image: '/v4.jpeg'
-  //   },
-  //   {
-  //     href: '/vulnerability/cve-2014-6271', 
-  //     name: 'CVE-2014-6271: Shellshock Bash Remote Code Execution', 
-  //     image: '/v5.jpg'
-  //   },
-  //   {
-  //     href: '/vulnerability/cve-2021-21985', 
-  //     name: 'CVE-2021-21985: VMware vCenter Server Remote Code Execution', 
-  //     image: '/v6.png'
-  //   },
-  //   {
-  //     href: '/vulnerability/cve-2022-22965', 
-  //     name: 'CVE-2022-22965: Spring4Shell Remote Code Execution', 
-  //     image: '/v7.jpg'
-  //   },
-  //   {
-  //     href: '/vulnerability/cve-2017-5638', 
-  //     name: 'CVE-2017-5638: Apache Struts Remote Code Execution', 
-  //     image: '/v8.jpg'
-  //   },
-  // ];
-  const {user} = useContextauth()
-  
+  const [Vulnerability, setVulnerability] = useState([]);
+  const [filteredVulnerabilities, setFilteredVulnerabilities] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const vulnerabilitiesPerPage = 9;
+  const { user } = useContextauth();
+
   useEffect(() => {
-    // Fetch all CVE data from the backend
     const fetchVulnerabilities = async () => {
-      // console.log('hhhhhh')
       try {
-        const response = await fetch('http://localhost:8000/api/vulnerabilities/'); 
+        const response = await fetch('http://localhost:8000/api/vulnerabilities/');
         const data = await response.json();
-        setVulnerability(data); // Save the entire data array
-        console.log(data)
+        setVulnerability(data);
+        setFilteredVulnerabilities(data); // Initialize filtered list
+        console.log(data);
       } catch (error) {
         console.error('Error fetching vulnerabilities:', error);
       }
@@ -66,28 +25,228 @@ function Home() {
 
     fetchVulnerabilities();
   }, []);
-//   useEffect(() => {
-//     console.log('this is my payload', use
-// }, [user])
-return (
-  <div className='flex flex-col align-center mx-5 justify-center my-14 w-full h-full relative z-1'>
-    <div className='text-3xl font-bold text-emerald-400 mx-auto pb-2'>
-      Explorez les Vulnérabilités
+
+  // Pagination logic
+  const indexOfLastVulnerability = currentPage * vulnerabilitiesPerPage;
+  const indexOfFirstVulnerability = indexOfLastVulnerability - vulnerabilitiesPerPage;
+  const currentVulnerabilities = filteredVulnerabilities.slice(indexOfFirstVulnerability, indexOfLastVulnerability);
+
+  const totalPages = Math.ceil(filteredVulnerabilities.length / vulnerabilitiesPerPage);
+
+  const nextPage = () => {
+    if (currentPage < totalPages) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
+
+  const prevPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
+
+  return (
+    <div className="flex flex-col align-center mx-5 justify-center my-14 w-full h-full relative z-1">
+      <div className="text-3xl font-bold text-emerald-400 mx-auto pb-2">
+        Explorez les Vulnérabilités
+      </div>
+      <div className="opacity-70 text-sm mx-auto text-white pb-3">
+        Découvrez et apprenez à sécuriser ces vulnérabilités critiques
+      </div>
+
+      {/* Search Component */}
+      <SearchVulnerabilities
+        vulnerabilities={Vulnerability}
+        setFilteredVulnerabilities={setFilteredVulnerabilities}
+      />
+
+      <div className="w-full justify-center grid grid-cols-3 gap-3 px-24">
+        {currentVulnerabilities.map((Vul) => (
+          <CategorieItem key={Vul.code_cve} Vul={Vul} />
+        ))}
+      </div>
+
+      {/* Pagination Controls */}
+      <div className="flex justify-center items-center mt-6">
+        <button
+          onClick={prevPage}
+          disabled={currentPage === 1}
+          className={`px-4 py-2 rounded-md mr-2 ${
+            currentPage === 1 ? 'bg-gray-500' : 'bg-emerald-500 hover:bg-emerald-600'
+          } text-white font-medium`}
+        >
+          &larr; Précédent
+        </button>
+        <span className="text-white mx-2">
+          Page {currentPage} sur {totalPages}
+        </span>
+        <button
+          onClick={nextPage}
+          disabled={currentPage === totalPages}
+          className={`px-4 py-2 rounded-md ml-2 ${
+            currentPage === totalPages ? 'bg-gray-500' : 'bg-emerald-500 hover:bg-emerald-600'
+          } text-white font-medium`}
+        >
+          Suivant &rarr;
+        </button>
+      </div>
     </div>
-    <div className='opacity-70 text-sm mx-auto text-white pb-3'>
-      Découvrez et apprenez à sécuriser ces vulnérabilités critiques
-    </div>
-    <div className='w-full justify-center grid grid-cols-3 gap-3 px-24'>
-      {Vulnerability.map((Vul) => {
-        return (
-          <CategorieItem 
-            key={Vul.code_cve}
-            Vul={Vul}
-          />
-        )
-      })}
-    </div>
-  </div>
-)
+  );
 }
-export default Home
+
+export default Home;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useState, useEffect } from 'react';
+// import { useContextauth } from '../hooks/useContextauth';
+// import CategorieItem from '../components/CategorieItem';
+// import SearchVulnerabilities from '../components/SearchVulnerabilities';
+// function Home() {
+//   const [Vulnerability, setVulnerability] = useState([]);
+//   const [currentPage, setCurrentPage] = useState(1); // Current page state
+//   const vulnerabilitiesPerPage = 9; // Vulnerabilities per page
+//   const { user } = useContextauth();
+
+//   useEffect(() => {
+//     const fetchVulnerabilities = async () => {
+//       try {
+//         const response = await fetch('http://localhost:8000/api/vulnerabilities/');
+//         const data = await response.json();
+//         setVulnerability(data); // Use the full data without slicing
+//         console.log(data);
+//       } catch (error) {
+//         console.error('Error fetching vulnerabilities:', error);
+//       }
+//     };
+
+//     fetchVulnerabilities();
+//   }, []);
+
+//   // Pagination logic
+//   const indexOfLastVulnerability = currentPage * vulnerabilitiesPerPage;
+//   const indexOfFirstVulnerability = indexOfLastVulnerability - vulnerabilitiesPerPage;
+//   const currentVulnerabilities = Vulnerability.slice(indexOfFirstVulnerability, indexOfLastVulnerability);
+
+//   const totalPages = Math.ceil(Vulnerability.length / vulnerabilitiesPerPage);
+
+//   const nextPage = () => {
+//     if (currentPage < totalPages) {
+//       setCurrentPage(currentPage + 1);
+//     }
+//   };
+
+//   const prevPage = () => {
+//     if (currentPage > 1) {
+//       setCurrentPage(currentPage - 1);
+//     }
+//   };
+
+//   return (
+//     <div className='flex flex-col align-center mx-5 justify-center my-14 w-full h-full relative z-1'>
+//       <div className='text-3xl font-bold text-emerald-400 mx-auto pb-2'>
+//         Explorez les Vulnérabilités
+//       </div>
+//       <div className='opacity-70 text-sm mx-auto text-white pb-3'>
+//         Découvrez et apprenez à sécuriser ces vulnérabilités critiques
+//       </div>
+
+//       <SearchVulnerabilities
+//         vulnerabilities={Vulnerability}
+//         setFilteredVulnerabilities={setFilteredVulnerabilities}
+//       />
+
+//       <div className='w-full justify-center grid grid-cols-3 gap-3 px-24'>
+//         {currentVulnerabilities.map((Vul) => (
+//           <CategorieItem key={Vul.code_cve} Vul={Vul} />
+//         ))}
+//       </div>
+
+//       {/* Pagination Controls */}
+//       <div className='flex justify-center items-center mt-6'>
+//         <button
+//           onClick={prevPage}
+//           disabled={currentPage === 1}
+//           className={`px-4 py-2 rounded-md mr-2 ${
+//             currentPage === 1 ? 'bg-gray-500' : 'bg-emerald-500 hover:bg-emerald-600'
+//           } text-white font-medium`}
+//         >
+//           &larr; Précédent
+//         </button>
+//         <span className='text-white mx-2'>
+//           Page {currentPage} sur {totalPages}
+//         </span>
+//         <button
+//           onClick={nextPage}
+//           disabled={currentPage === totalPages}
+//           className={`px-4 py-2 rounded-md ml-2 ${
+//             currentPage === totalPages ? 'bg-gray-500' : 'bg-emerald-500 hover:bg-emerald-600'
+//           } text-white font-medium`}
+//         >
+//           Suivant &rarr;
+//         </button>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Home;

@@ -37,7 +37,26 @@ function CategoryChoice() {
       <div className='text-center text-emerald-400 font-bold text-3xl my-8 w-full h-full'>Vulnerability {Vul}</div>
 <div className='flex flex-co justify-center max-w-screen-xl align-center w-full h-full'>
     
+<div className='w-full h-full flex flex-col rounded-lg bg-emerald-900 '>
+    <div className='text-white text-bold text-2xl p-4'>
+        code cve : {vulnerability?.code_cve}
+    </div>
+    <div className='text-white text-bold text-2xl p-4'>
+        resume : {vulnerability?.resume}
+    </div>
+    <div className='text-white text-bold text-2xl p-4'>
+    type vulnerability : {vulnerability?.type_vulnerability}
+    </div>
+    <div className='text-white text-bold text-2xl p-4'>
+     source : {vulnerability?.source}
+    </div>
+    <div className='text-white text-bold text-2xl p-4'>
+     date : {vulnerability?.date}
+    </div>
+    </div>
 
+
+</div>
 
 
 
@@ -45,8 +64,7 @@ function CategoryChoice() {
 
 
     </div>
-    </div>
-  )
+  );
 }
 
 export default CategoryChoice

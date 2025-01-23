@@ -39,7 +39,6 @@ function Dashboard() {
 
         {active === "create" && <Addproduct />}
         {active === "products" && <Products />}
-        {/* {active === "analytics" && <Analytics />} */}
     </div>
   )
 }
