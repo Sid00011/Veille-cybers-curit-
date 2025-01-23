@@ -5,9 +5,19 @@ from django.contrib.auth.models import User
 from .serializers import UserSerializer  
 from django.contrib.auth import authenticate
 from rest_framework_simplejwt.tokens import RefreshToken
+from .models import Vulnerability
+from .serializers import VulnerabilitySerializer
+from rest_framework.views import APIView
+
+class VulnerabilityList(APIView):
+    def get(self, request):
+        vulnerabilities = Vulnerability.objects.all()
+        serializer = VulnerabilitySerializer(vulnerabilities, many=True)
+        return Response(serializer.data)
 
 @api_view(['POST'])
 def signup(request):
+    
     if request.method == 'POST':
         username = request.data.get('username')
         email = request.data.get('email')
