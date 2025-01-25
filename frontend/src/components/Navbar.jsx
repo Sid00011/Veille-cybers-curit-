@@ -10,13 +10,10 @@ function Navbar() {
   const Logout = useLogout()
   const {user} = useContextauth()
   const isAdmin = 'Admin'
-//   console.log("check" , isAdmin)
-//   console.log("here is my user", user.user.Cartitems.length)
   const handleLogout = async (e) => {
     e.preventDefault()
     Logout()
   }
-//   console.log("my cart container", cart?.length)
   return (
    <div className='sticky z-100 top-0 left-0 w-full bg-gray-900 h-12 px-5 flex justify-between items-center'>
         <div className='text-xl font-bold text-blue-300'>
@@ -29,8 +26,6 @@ function Navbar() {
             <Link to='/cart' className=' flex items-center gap-1  px-3 py-1 rounded-lg cursor-pointer relative bg-emerald-500'>
                 <CiShop/>
                 <span>messagerie</span>
-
-                {/* { cart?.length > 0 && <span className=' absolute -top-4 left-3 rounded-full w-3 h-3 text-center translate-y-1/2 '>{ cart.length}</span>} */}
             </Link>
 
             {isAdmin === "Admin" && (

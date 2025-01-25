@@ -8,6 +8,55 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from .models import Vulnerability
 from .serializers import VulnerabilitySerializer
 from rest_framework.views import APIView
+from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
+import json
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+
+@csrf_exempt
+def send_email(request):
+    if request.method == 'POST':
+        try:
+            # Parse the request body
+            data = json.loads(request.body)
+            sender_email = data.get('from')
+            sender_password = data.get('password')
+            recipient_email = data.get('to')
+            
+            subject = data.get('subject')
+            body = data.get('description')
+
+            # Validate input fields
+            if not all([sender_email, sender_password, recipient_email, subject, body]):
+                return JsonResponse({'error': 'All fields are required.'}, status=400)
+
+            # Create the email content
+            msg = MIMEMultipart()
+            msg['From'] = sender_email
+            msg['To'] = recipient_email
+            msg['Subject'] = subject
+            msg.attach(MIMEText(body, 'plain'))
+
+            # Connect to the SMTP server and send the email
+            server = smtplib.SMTP('smtp.gmail.com', 587)
+            server.starttls()
+            server.login(sender_email, sender_password)
+            server.send_message(msg)
+            server.quit()
+
+            return JsonResponse({'message': 'Email sent successfully!'}, status=200)
+
+        except smtplib.SMTPAuthenticationError:
+            return JsonResponse({'error': 'Invalid email or password.'}, status=401)
+        except Exception as e:
+            return JsonResponse({'error': str(e)}, status=500)
+
+    return JsonResponse({'error': 'Invalid request method.'}, status=405)
+
+
+
 
 class VulnerabilityList(APIView):
     def get(self, request):

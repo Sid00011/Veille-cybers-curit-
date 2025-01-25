@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 import { Toaster } from 'react-hot-toast'
 import { useContextauth } from './hooks/useContextauth'
 import CategoryChoice from './components/CategoryChoice'
-import Dashboard from './pages/Dashboard'
+// import Dashboard from './pages/Dashboard'
 import { useEffect } from 'react'
 import useCard from './hooks/useCard'
 function App() {
@@ -28,7 +28,7 @@ function App() {
       <Route path='/cart' element= {user ? <Cart /> : <Navigate to = '/signin'/>} />
       <Route path='/signin' element= {!user ? <Signin /> : <Navigate to = '/'/>} />
       <Route path='/signup' element= {!user ? <Signup /> : <Navigate to = '/'/>} />
-      <Route path='/dashboard' element= {user ? <Dashboard /> : <Navigate to = '/signin'/>} />
+      {/* <Route path='/dashboard' element= {user ? <Dashboard /> : <Navigate to = '/signin'/>} /> */}
       {/* <Route path='/vulnerability/:Vul' element= {<CategoryChoice/>} /> */}
       <Route path="/vulnerability/:Vul" element={<CategoryChoice />} />
 

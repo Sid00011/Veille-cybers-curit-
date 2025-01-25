@@ -1,30 +1,20 @@
 import React, { useEffect } from 'react'
 import useProduct from '../hooks/useProduct'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { useContextauth } from '../hooks/useContextauth'
-import ProductCategory from './ProductCategory'
 import { useState } from 'react'
 function CategoryChoice() {
-  // const {getCategory} = useProduct()
   const {Vul} = useParams()
-  // const {products} = useContextauth()
-  // console.log(category)
-  // console.log("my products", products)
-  // useEffect(() => {
-  //   getCategory(category)
-  // }, [category])
   console.log(Vul)
   const [vulnerability, setVulnerability] = useState(null);
   useEffect(() => {
     // Simulate fetching data for the selected vulnerability
     const fetchVulnerabilityDetails = async () => {
       try {
-        console.log("hhhh");
         // Replace with your actual data fetching logic (e.g., API call or global state lookup)
         const response = await fetch(`http://localhost:8000/api/vulnerabilities/${Vul}`);
         const data = await response.json();
         setVulnerability(data);
-        console.log("my data" , data);
       } catch (error) {
         console.error('Error fetching vulnerability details:', error);
       } 
@@ -52,6 +42,12 @@ function CategoryChoice() {
     </div>
     <div className='text-white text-bold text-2xl p-4'>
      date : {vulnerability?.date}
+    </div>
+    <a href={vulnerability?.lien_article} target="_blank" className='text-white text-bold text-2xl p-4' >
+     lien Article: {vulnerability?.lien_article}
+    </a>
+    <div className='text-white text-bold text-2xl p-4' >
+     Resume Article: {vulnerability?.resume_article}
     </div>
     </div>
 
