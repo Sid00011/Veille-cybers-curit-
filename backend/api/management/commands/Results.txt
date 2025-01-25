@@ -1,0 +1,450 @@
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24756
+Resume:Cross-Site Request Forgery (CSRF) vulnerability in mgplugin Roi Calculator allows Stored XSS. This issue affects Roi Calculator: from n/a through 1.0.
+Max cvss:7.1
+Epss:0.04%
+Vulnerability:Cross site scripting (XSS)
+Date:2025-01-24 17:25:19
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24756
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24755
+Resume:Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in add-ons.org PDF Invoices for WooCommerce + Drag and Drop Template Builder allows Stored XSS. This issue affects PDF Invoices for WooCommerce + Drag and Drop Template Builder: from n/a through 4.6.0.
+Max cvss:6.5
+Epss:0.04%
+Vulnerability:Cross site scripting (XSS)
+Date:2025-01-24 17:25:22
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24755
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24753
+Resume:Missing Authorization vulnerability in Kadence WP Gutenberg Blocks by Kadence Blocks allows Exploiting Incorrectly Configured Access Control Security Levels. This issue affects Gutenberg Blocks by Kadence Blocks: from n/a through 3.3.1.
+Max cvss:4.3
+Epss:0.04%
+Vulnerability:Not defined
+Date:2025-01-24 17:25:22
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24753
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24751
+Resume:Missing Authorization vulnerability in GoDaddy CoBlocks allows Exploiting Incorrectly Configured Access Control Security Levels. This issue affects CoBlocks: from n/a through 3.1.13.
+Max cvss:4.3
+Epss:0.04%
+Vulnerability:Not defined
+Date:2025-01-24 17:25:21
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24751
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24750
+Resume:Missing Authorization vulnerability in ExactMetrics ExactMetrics allows Exploiting Incorrectly Configured Access Control Security Levels. This issue affects ExactMetrics: from n/a through 8.1.0.
+Max cvss:5.4
+Epss:0.04%
+Vulnerability:Not defined
+Date:2025-01-24 17:25:20
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24750
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24746
+Resume:Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Popup Maker Popup Maker allows Stored XSS. This issue affects Popup Maker: from n/a through 1.20.2.
+Max cvss:6.5
+Epss:0.04%
+Vulnerability:Cross site scripting (XSS)
+Date:2025-01-24 17:25:23
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24746
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24739
+Resume:Cross-Site Request Forgery (CSRF) vulnerability in FluentSMTP & WPManageNinja Team FluentSMTP allows Cross Site Request Forgery. This issue affects FluentSMTP: from n/a through 2.2.80.
+Max cvss:4.3
+Epss:0.04%
+Vulnerability:Cross-site request forgery (CSRF)
+Date:2025-01-24 17:25:10
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24739
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24738
+Resume:Cross-Site Request Forgery (CSRF) vulnerability in NowButtons.com Call Now Button allows Cross Site Request Forgery. This issue affects Call Now Button: from n/a through 1.4.13.
+Max cvss:4.3
+Epss:0.04%
+Vulnerability:Cross-site request forgery (CSRF)
+Date:2025-01-24 17:25:15
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24738
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24736
+Resume:Missing Authorization vulnerability in Metaphor Creations Post Duplicator allows Exploiting Incorrectly Configured Access Control Security Levels. This issue affects Post Duplicator: from n/a through 2.35.
+Max cvss:4.3
+Epss:0.04%
+Vulnerability:Not defined
+Date:2025-01-24 17:25:24
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24736
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24733
+Resume:Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in AddonMaster Post Grid Master allows PHP Local File Inclusion. This issue affects Post Grid Master: from n/a through 3.4.12.
+Max cvss:6.5
+Epss:0.04%
+Vulnerability:File inclusion
+Date:2025-01-24 17:25:17
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24733
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24732
+Resume:Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Booking & Appointment - Repute Infosystems BookingPress allows DOM-Based XSS. This issue affects BookingPress: from n/a through 1.1.25.
+Max cvss:6.5
+Epss:0.04%
+Vulnerability:Cross site scripting (XSS)
+Date:2025-01-24 17:25:11
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24732
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24731
+Resume:Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in IP2Location Download IP2Location Country Blocker allows Stored XSS. This issue affects Download IP2Location Country Blocker: from n/a through 2.38.3.
+Max cvss:5.9
+Epss:0.04%
+Vulnerability:Cross site scripting (XSS)
+Date:2025-01-24 17:25:12
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24731
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24730
+Resume:Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Rextheme WP VR allows DOM-Based XSS. This issue affects WP VR: from n/a through 8.5.14.
+Max cvss:6.5
+Epss:0.04%
+Vulnerability:Cross site scripting (XSS)
+Date:2025-01-24 17:25:15
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24730
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24729
+Resume:Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in ElementInvader ElementInvader Addons for Elementor allows Stored XSS. This issue affects ElementInvader Addons for Elementor: from n/a through 1.3.3.
+Max cvss:6.5
+Epss:0.04%
+Vulnerability:Cross site scripting (XSS)
+Date:2025-01-24 17:25:19
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24729
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24728
+Resume:Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Yannick Lefebvre Bug Library allows Blind SQL Injection. This issue affects Bug Library: from n/a through 2.1.4.
+Max cvss:8.5
+Epss:0.04%
+Vulnerability:Sql Injection
+Date:2025-01-24 17:25:14
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24728
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24727
+Resume:Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in CodePeople Contact Form Email allows Stored XSS. This issue affects Contact Form Email: from n/a through 1.3.52.
+Max cvss:5.9
+Epss:0.04%
+Vulnerability:Cross site scripting (XSS)
+Date:2025-01-24 17:25:09
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24727
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24726
+Resume:Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in HT Plugins HT Conctact Form 7 allows Stored XSS. This issue affects HT Conctact Form 7: from n/a through 1.2.1.
+Max cvss:6.5
+Epss:0.04%
+Vulnerability:Cross site scripting (XSS)
+Date:2025-01-24 17:25:17
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24726
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24725
+Resume:Missing Authorization vulnerability in ThimPress Thim Elementor Kit allows Exploiting Incorrectly Configured Access Control Security Levels. This issue affects Thim Elementor Kit: from n/a through 1.2.8.
+Max cvss:4.3
+Epss:0.04%
+Vulnerability:Not defined
+Date:2025-01-24 17:25:16
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24725
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24724
+Resume:Cross-Site Request Forgery (CSRF) vulnerability in Wow-Company Side Menu Lite allows Cross Site Request Forgery. This issue affects Side Menu Lite: from n/a through 5.3.1.
+Max cvss:5.4
+Epss:0.04%
+Vulnerability:Cross-site request forgery (CSRF)
+Date:2025-01-24 17:25:11
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24724
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24723
+Resume:Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in CodePeople Booking Calendar Contact Form allows Stored XSS. This issue affects Booking Calendar Contact Form: from n/a through 1.2.55.
+Max cvss:5.9
+Epss:0.04%
+Vulnerability:Cross site scripting (XSS)
+Date:2025-01-24 17:25:13
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24723
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24722
+Resume:Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in F.A.Q Builder Team FAQ Builder AYS allows Stored XSS. This issue affects FAQ Builder AYS: from n/a through 1.7.3.
+Max cvss:5.9
+Epss:0.04%
+Vulnerability:Cross site scripting (XSS)
+Date:2025-01-24 17:25:05
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24722
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24721
+Resume:Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Aleksandar Urošević Easy YouTube Gallery allows Stored XSS. This issue affects Easy YouTube Gallery: from n/a through 1.0.4.
+Max cvss:6.5
+Epss:0.04%
+Vulnerability:Cross site scripting (XSS)
+Date:2025-01-24 17:25:18
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24721
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24720
+Resume:Cross-Site Request Forgery (CSRF) vulnerability in Wow-Company Sticky Buttons allows Cross Site Request Forgery. This issue affects Sticky Buttons: from n/a through 4.1.1.
+Max cvss:5.4
+Epss:0.04%
+Vulnerability:Cross-site request forgery (CSRF)
+Date:2025-01-24 17:25:05
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24720
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24719
+Resume:Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in wpdevart Widget Countdown allows Stored XSS. This issue affects Widget Countdown: from n/a through 2.7.1.
+Max cvss:6.5
+Epss:0.04%
+Vulnerability:Cross site scripting (XSS)
+Date:2025-01-24 17:25:12
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24719
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24717
+Resume:Cross-Site Request Forgery (CSRF) vulnerability in Wow-Company Modal Window allows Cross Site Request Forgery. This issue affects Modal Window: from n/a through 6.1.4.
+Max cvss:5.4
+Epss:0.04%
+Vulnerability:Cross-site request forgery (CSRF)
+Date:2025-01-24 17:25:08
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24717
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24716
+Resume:Cross-Site Request Forgery (CSRF) vulnerability in Wow-Company Herd Effects allows Cross Site Request Forgery. This issue affects Herd Effects: from n/a through 6.2.1.
+Max cvss:5.4
+Epss:0.04%
+Vulnerability:Cross-site request forgery (CSRF)
+Date:2025-01-24 17:25:09
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24716
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24715
+Resume:Cross-Site Request Forgery (CSRF) vulnerability in Wow-Company Counter Box allows Cross Site Request Forgery. This issue affects Counter Box: from n/a through 2.0.5.
+Max cvss:5.4
+Epss:0.04%
+Vulnerability:Cross-site request forgery (CSRF)
+Date:2025-01-24 17:25:06
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24715
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24714
+Resume:Cross-Site Request Forgery (CSRF) vulnerability in Wow-Company Bubble Menu – circle floating menu allows Cross Site Request Forgery. This issue affects Bubble Menu – circle floating menu: from n/a through 4.0.2.
+Max cvss:5.4
+Epss:0.04%
+Vulnerability:Cross-site request forgery (CSRF)
+Date:2025-01-24 17:25:00
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24714
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24713
+Resume:Cross-Site Request Forgery (CSRF) vulnerability in Wow-Company Button Generator – easily Button Builder allows Cross Site Request Forgery. This issue affects Button Generator – easily Button Builder: from n/a through 3.1.1.
+Max cvss:5.4
+Epss:0.04%
+Vulnerability:Cross-site request forgery (CSRF)
+Date:2025-01-24 17:25:06
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24713
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24712
+Resume:Cross-Site Request Forgery (CSRF) vulnerability in RadiusTheme Radius Blocks allows Cross Site Request Forgery. This issue affects Radius Blocks: from n/a through 2.1.2.
+Max cvss:5.4
+Epss:0.04%
+Vulnerability:Cross-site request forgery (CSRF)
+Date:2025-01-24 17:25:02
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24712
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24711
+Resume:Cross-Site Request Forgery (CSRF) vulnerability in Wow-Company Popup Box allows Cross Site Request Forgery. This issue affects Popup Box: from n/a through 3.2.4.
+Max cvss:5.4
+Epss:0.04%
+Vulnerability:Cross-site request forgery (CSRF)
+Date:2025-01-24 17:25:00
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24711
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24709
+Resume:Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Plethora Plugins Plethora Plugins Tabs + Accordions allows Stored XSS. This issue affects Plethora Plugins Tabs + Accordions: from n/a through 1.1.5.
+Max cvss:6.5
+Epss:0.04%
+Vulnerability:Cross site scripting (XSS)
+Date:2025-01-24 17:25:02
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24709
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24706
+Resume:Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in MultiVendorX WC Marketplace allows Stored XSS. This issue affects WC Marketplace: from n/a through 4.2.13.
+Max cvss:6.5
+Epss:0.04%
+Vulnerability:Cross site scripting (XSS)
+Date:2025-01-24 17:25:03
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24706
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24705
+Resume:Missing Authorization vulnerability in Arshid WooCommerce Quick View allows Exploiting Incorrectly Configured Access Control Security Levels. This issue affects WooCommerce Quick View: from n/a through 1.1.1.
+Max cvss:5.3
+Epss:0.04%
+Vulnerability:Not defined
+Date:2025-01-24 17:24:59
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24705
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24704
+Resume:Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Sebastian Zaha Magic the Gathering Card Tooltips allows Stored XSS. This issue affects Magic the Gathering Card Tooltips: from n/a through 3.4.0.
+Max cvss:6.5
+Epss:0.04%
+Vulnerability:Cross site scripting (XSS)
+Date:2025-01-24 17:24:59
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24704
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24703
+Resume:Server-Side Request Forgery (SSRF) vulnerability in DLX Plugins Comment Edit Core – Simple Comment Editing allows Server Side Request Forgery. This issue affects Comment Edit Core – Simple Comment Editing: from n/a through 3.0.33.
+Max cvss:4.4
+Epss:0.04%
+Vulnerability:Server-side request forgery (SSRF)
+Date:2025-01-24 17:25:07
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24703
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24702
+Resume:Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Xagio Xagio SEO allows Stored XSS. This issue affects Xagio SEO: from n/a through 7.0.0.20.
+Max cvss:6.5
+Epss:0.04%
+Vulnerability:Cross site scripting (XSS)
+Date:2025-01-24 17:24:52
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24702
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24701
+Resume:Server-Side Request Forgery (SSRF) vulnerability in Kiboko Labs Chained Quiz allows Server Side Request Forgery. This issue affects Chained Quiz: from n/a through 1.3.2.9.
+Max cvss:4.4
+Epss:0.04%
+Vulnerability:Server-side request forgery (SSRF)
+Date:2025-01-24 17:24:56
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24701
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24698
+Resume:Cross-Site Request Forgery (CSRF) vulnerability in G5Theme Essential Real Estate allows Cross Site Request Forgery. This issue affects Essential Real Estate: from n/a through 5.1.8.
+Max cvss:4.3
+Epss:0.04%
+Vulnerability:Cross-site request forgery (CSRF)
+Date:2025-01-24 17:25:01
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24698
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24696
+Resume:Cross-Site Request Forgery (CSRF) vulnerability in WP Attire Attire Blocks allows Cross Site Request Forgery. This issue affects Attire Blocks: from n/a through 1.9.6.
+Max cvss:4.3
+Epss:0.04%
+Vulnerability:Cross-site request forgery (CSRF)
+Date:2025-01-24 17:25:04
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24696
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24695
+Resume:Server-Side Request Forgery (SSRF) vulnerability in HasThemes Extensions For CF7 allows Server Side Request Forgery. This issue affects Extensions For CF7: from n/a through 3.2.0.
+Max cvss:4.4
+Epss:0.04%
+Vulnerability:Server-side request forgery (SSRF)
+Date:2025-01-24 17:24:57
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24695
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24693
+Resume:Missing Authorization vulnerability in Yehi Advanced Notifications allows Exploiting Incorrectly Configured Access Control Security Levels. This issue affects Advanced Notifications: from n/a through 1.2.7.
+Max cvss:4.3
+Epss:0.04%
+Vulnerability:Not defined
+Date:2025-01-24 17:24:55
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24693
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24691
+Resume:Missing Authorization vulnerability in Gagan Sandhu , Enej Bajgoric , CTLT DEV, UBC People Lists allows Exploiting Incorrectly Configured Access Control Security Levels. This issue affects People Lists: from n/a through 1.3.10.
+Max cvss:4.3
+Epss:0.04%
+Vulnerability:Not defined
+Date:2025-01-24 17:24:56
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24691
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24687
+Resume:Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Lars Wallenborn Show/Hide Shortcode allows Stored XSS. This issue affects Show/Hide Shortcode: from n/a through 1.0.0.
+Max cvss:6.5
+Epss:0.04%
+Vulnerability:Cross site scripting (XSS)
+Date:2025-01-24 17:24:52
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24687
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24683
+Resume:Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in WPChill RSVP and Event Management Plugin allows SQL Injection. This issue affects RSVP and Event Management Plugin: from n/a through 2.7.14.
+Max cvss:7.6
+Epss:0.04%
+Vulnerability:Sql Injection
+Date:2025-01-24 17:24:57
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24683
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24682
+Resume:Missing Authorization vulnerability in mikemmx Super Block Slider allows Exploiting Incorrectly Configured Access Control Security Levels. This issue affects Super Block Slider: from n/a through 2.7.9.
+Max cvss:4.3
+Epss:0.04%
+Vulnerability:Not defined
+Date:2025-01-24 17:24:53
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24682
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24681
+Resume:Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in wpWax Product Carousel Slider & Grid Ultimate for WooCommerce allows Stored XSS. This issue affects Product Carousel Slider & Grid Ultimate for WooCommerce: from n/a through 1.10.0.
+Max cvss:5.9
+Epss:0.04%
+Vulnerability:Cross site scripting (XSS)
+Date:2025-01-24 17:24:54
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24681
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24679
+Resume:Missing Authorization vulnerability in webraketen Internal Links Manager allows Exploiting Incorrectly Configured Access Control Security Levels. This issue affects Internal Links Manager: from n/a through 2.5.2.
+Max cvss:4.3
+Epss:0.04%
+Vulnerability:Not defined
+Date:2025-01-24 17:24:49
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24679
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24678
+Resume:Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS) vulnerability in Listamester Listamester allows Stored XSS. This issue affects Listamester: from n/a through 2.3.4.
+Max cvss:6.5
+Epss:0.04%
+Vulnerability:Cross site scripting (XSS)
+Date:2025-01-24 17:24:54
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24678
+-----------------------------------------------------------------------------
+Code CVE:CVE-2025-24675
+Resume:Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in osamaesh WP Visitor Statistics (Real Time Traffic) allows Stored XSS. This issue affects WP Visitor Statistics (Real Time Traffic): from n/a through 7.2.
+Max cvss:6.5
+Epss:0.04%
+Vulnerability:Cross site scripting (XSS)
+Date:2025-01-24 17:24:51
+Source:Patchstack
+Lien:https://www.cvedetails.com/cve/CVE-2025-24675
